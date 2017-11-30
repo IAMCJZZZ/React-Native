@@ -12,9 +12,8 @@ import {
   View
 } from 'react-native';
 
-import RequestAnimView from './RequestAnimView';
-import NativePropsView from './NativePropsView';
 import LayoutAnimView from './LayoutAnimView';
+import AnimatedView from './AnimatedView';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -27,9 +26,9 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        {/*<RequestAnimView></RequestAnimView>*/}
-        {/*<NativePropsView></NativePropsView>*/}
-        <LayoutAnimView></LayoutAnimView>
+
+        {/*<LayoutAnimView></LayoutAnimView>*/}
+        <AnimatedView></AnimatedView>
       </View>
     );
   }
